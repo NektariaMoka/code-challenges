@@ -7,7 +7,6 @@ var twoSumWithMap = function (nums, target) {
   const map = new Map()
 
   for (let i = 0; i < nums.length; i++) {
-    console.log('map', i, map.keys(), map.values())
     const next = target - nums[i]
     if (map.has(next)) {
       return [map.get(next), i]
